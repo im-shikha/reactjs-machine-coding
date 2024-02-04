@@ -1,12 +1,79 @@
+/* Main.js */
 .App {
   display: flex;
   flex-wrap: wrap;
   margin: 60px;
+  justify-content: center;
 }
 
-li {
-  list-style: none;
+.main-container {
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: white;
+  border: solid 4px rgb(6 182 212);
 }
+
+.side-container {
+  display: flex;
+  padding: 8px;
+  gap: 4px;
+}
+
+.circle-blue {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(59 130 246);
+  display: inline-block;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.circle-purple {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(168 85 247);
+  display: inline-block;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.circle-pink {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(236 72 153);
+  display: inline-block;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.card__content {
+  text-align: center;
+}
+
+.card__content ul {
+  padding: 0;
+}
+
+.card__content > ul > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.q-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.q-link:hover {
+  text-decoration: underline;
+}
+
+/* UserCard.js */
 
 .usercard {
   width: 300px;

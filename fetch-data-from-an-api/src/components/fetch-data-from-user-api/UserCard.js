@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/profile.png";
+import image from "../../assets/profile.png";
 
 const UserCard = (props) => {
   return (

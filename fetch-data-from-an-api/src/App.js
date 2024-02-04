@@ -1,36 +1,17 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./components/main/Main";
+import FetchApi from "./components/fetch-data-from-user-api/FetchApi";
 
-import UserCard from "./components/UserCard";
-
-function App() {
-  const [users, setUsers] = useState([]);
-  const USERS_API = "https://jsonplaceholder.typicode.com/users";
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(USERS_API);
-        const userData = await response.json();
-        setUsers(userData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+const App = () => {
   return (
-    <div className="App">
-      {users &&
-        users.map((user) => (
-          <li key={user.id}>
-            <UserCard userprop={user} />
-          </li>
-        ))}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/fetch-api" element={<FetchApi />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
