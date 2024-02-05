@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/fetch-api" element={<FetchApi />} />
+        <Route path="/stopwatch" element={<FetchApi />} />
       </Routes>
     </BrowserRouter>
   );

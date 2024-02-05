@@ -25,8 +25,8 @@ const Main = () => {
               </Link>
             </li>
             <li>
-              <Link className="q-link" to="/fetch-api">
-                1. Fetch data from an API
+              <Link className="q-link" to="/stopwatch">
+                2. StopWatch
               </Link>
             </li>
           </ul>
